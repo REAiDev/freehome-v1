@@ -1,3 +1,6 @@
+# Backup git directory
+.bk.git/
+
 # Dependencies
 node_modules/
 .pnp
