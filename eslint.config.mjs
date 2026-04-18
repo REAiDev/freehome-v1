@@ -17,6 +17,7 @@ const eslintConfig = [
       'src/graphql/generated/*',
       '**/*.generated.ts',
       '**/*.generated.js',
+      'src/data/static-insights.ts',
     ],
   },
 ];

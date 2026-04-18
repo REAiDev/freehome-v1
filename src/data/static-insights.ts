@@ -55,8 +55,6 @@ const ul = (...items: ReturnType<typeof li>[]) => ({
   children: items,
 });
 
-const hr = () => ({ type: 'horizontalrule', version: 1 });
-
 const root = (...children: unknown[]) => ({
   root: {
     type: 'root',
