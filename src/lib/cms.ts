@@ -1,6 +1,7 @@
 import { PayloadSDK } from '@payloadcms/sdk';
 import { cache } from 'react';
 import type { Config, Page, Post, Header, Footer } from '@/types/cms-types';
+import { STATIC_INSIGHTS } from '@/data/static-insights';
 
 const CMS_BASE_URL = process.env.CMS_API_URL || 'https://cms.reai-int.net/api';
 
@@ -79,7 +80,7 @@ export const getFooter = cache(async (): Promise<Footer | null> => {
 
 /**
  * Fetch featured posts/insights for homepage
- * Scoped to freehome tenant, limited to 2 featured articles
+ * Falls back to static insights if CMS is unavailable
  */
 export const getFeaturedInsights = cache(async (): Promise<Post[]> => {
   try {
@@ -95,16 +96,17 @@ export const getFeaturedInsights = cache(async (): Promise<Post[]> => {
     });
     if (!res.ok) throw new Error(`Failed to fetch featured insights: ${res.status}`);
     const result = await res.json();
-    return result.docs;
+    const cmsPosts: Post[] = result.docs;
+    return cmsPosts.length > 0 ? cmsPosts.slice(0, 2) : STATIC_INSIGHTS.slice(0, 2);
   } catch (error) {
-    console.error('Failed to fetch featured insights:', error);
-    return [];
+    console.error('Failed to fetch featured insights, using static data:', error);
+    return STATIC_INSIGHTS.slice(0, 2);
   }
 });
 
 /**
  * Fetch all published posts for the insights listing page
- * Scoped to freehome tenant
+ * Falls back to static insights if CMS is unavailable
  */
 export const getAllPosts = cache(async (): Promise<Post[]> => {
   try {
@@ -120,16 +122,17 @@ export const getAllPosts = cache(async (): Promise<Post[]> => {
     });
     if (!res.ok) throw new Error(`Failed to fetch all posts: ${res.status}`);
     const result = await res.json();
-    return result.docs;
+    const cmsPosts: Post[] = result.docs;
+    return cmsPosts.length > 0 ? cmsPosts : STATIC_INSIGHTS;
   } catch (error) {
-    console.error('Failed to fetch all posts:', error);
-    return [];
+    console.error('Failed to fetch all posts, using static data:', error);
+    return STATIC_INSIGHTS;
   }
 });
 
 /**
  * Fetch a single post by slug
- * Scoped to freehome tenant
+ * Falls back to static insights if CMS is unavailable
  */
 export const getPostBySlug = cache(async (slug: string): Promise<Post | null> => {
   try {
@@ -145,9 +148,11 @@ export const getPostBySlug = cache(async (slug: string): Promise<Post | null> =>
     });
     if (!res.ok) throw new Error(`Failed to fetch post: ${res.status}`);
     const result = await res.json();
-    return result.docs[0] ?? null;
+    const cmsPost: Post | undefined = result.docs[0];
+    if (cmsPost) return cmsPost;
+    return STATIC_INSIGHTS.find((p) => p.slug === slug) ?? null;
   } catch (error) {
-    console.error(`Failed to fetch post: ${slug}`, error);
-    return null;
+    console.error(`Failed to fetch post: ${slug}, using static data`, error);
+    return STATIC_INSIGHTS.find((p) => p.slug === slug) ?? null;
   }
 });
