@@ -1,0 +1,21 @@
+query GetCountries {
+  countries {
+    id
+    name
+    code
+    currency
+  }
+}
+
+query GetCountry($id: ID!) {
+  country(id: $id) {
+    id
+    name
+    code
+    currency
+    regions {
+      id
+      name
+    }
+  }
+}

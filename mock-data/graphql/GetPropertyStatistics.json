@@ -1,0 +1,95 @@
+{
+  "data": {
+    "propertyStatistics": {
+      "byStatus": {
+        "statusCounts": [
+          {
+            "status": "available",
+            "count": 145,
+            "__typename": "StatusCount"
+          },
+          {
+            "status": "sold",
+            "count": 67,
+            "__typename": "StatusCount"
+          },
+          {
+            "status": "pending",
+            "count": 23,
+            "__typename": "StatusCount"
+          }
+        ],
+        "total": 235,
+        "__typename": "StatusStatistics"
+      },
+      "byPrice": {
+        "priceRanges": [
+          {
+            "range": "0-50000",
+            "count": 89,
+            "__typename": "PriceRange"
+          },
+          {
+            "range": "50000-100000",
+            "count": 76,
+            "__typename": "PriceRange"
+          },
+          {
+            "range": "100000-200000",
+            "count": 45,
+            "__typename": "PriceRange"
+          },
+          {
+            "range": "200000+",
+            "count": 25,
+            "__typename": "PriceRange"
+          }
+        ],
+        "total": 235,
+        "averagePrice": 75000.50,
+        "minPrice": 15000.00,
+        "maxPrice": 350000.00,
+        "__typename": "PriceStatistics"
+      },
+      "byLocation": {
+        "byCountry": [
+          {
+            "country": "Italy",
+            "count": 128,
+            "__typename": "LocationCount"
+          },
+          {
+            "country": "Spain",
+            "count": 67,
+            "__typename": "LocationCount"
+          },
+          {
+            "country": "France",
+            "count": 40,
+            "__typename": "LocationCount"
+          }
+        ],
+        "byRegion": [
+          {
+            "region": "Tuscany",
+            "count": 45,
+            "__typename": "LocationCount"
+          },
+          {
+            "region": "Andalusia",
+            "count": 38,
+            "__typename": "LocationCount"
+          },
+          {
+            "region": "Provence",
+            "count": 29,
+            "__typename": "LocationCount"
+          }
+        ],
+        "total": 235,
+        "__typename": "LocationStatistics"
+      },
+      "__typename": "PropertyStatistics"
+    }
+  }
+}

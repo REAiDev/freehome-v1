@@ -1,0 +1,55 @@
+{
+  "GetCountries": {
+    "description": "Returns list of all countries",
+    "file": "GetCountries.json",
+    "variables": {}
+  },
+  "GetPropertyStatistics": {
+    "description": "Returns property statistics across different dimensions",
+    "file": "GetPropertyStatistics.json",
+    "variables": {}
+  },
+  "GetProperties": {
+    "description": "Returns paginated list of properties with optional filters",
+    "variants": [
+      {
+        "description": "Page 1, 3 items, max price 10K",
+        "file": "GetProperties-page1-pageSize3-priceMax10.json",
+        "variables": {
+          "page": 1,
+          "pageSize": 3,
+          "priceMax": 10
+        }
+      },
+      {
+        "description": "Page 1, 1 item, no filters",
+        "file": "GetProperties-page1-pageSize1.json",
+        "variables": {
+          "page": 1,
+          "pageSize": 1
+        }
+      }
+    ]
+  },
+  "GetMunicipalities": {
+    "description": "Returns paginated list of municipalities with optional filters",
+    "variants": [
+      {
+        "description": "Page 1, 3 items",
+        "file": "GetMunicipalities-page1-pageSize3.json",
+        "variables": {
+          "page": 1,
+          "pageSize": 3
+        }
+      },
+      {
+        "description": "Page 1, 1 item",
+        "file": "GetMunicipalities-page1-pageSize1.json",
+        "variables": {
+          "page": 1,
+          "pageSize": 1
+        }
+      }
+    ]
+  }
+}

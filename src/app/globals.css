@@ -1,0 +1,345 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.75rem;
+    --chart-1: 221.2 83.2% 53.3%;
+    --chart-2: 212 95% 68%;
+    --chart-3: 216 92% 79%;
+    --chart-4: 210 98% 78%;
+    --chart-5: 212 97% 87%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 212 95% 68%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212 95% 68%;
+    --chart-1: 212 95% 68%;
+    --chart-2: 216 92% 79%;
+    --chart-3: 210 98% 78%;
+    --chart-4: 212 97% 87%;
+    --chart-5: 221.2 83.2% 53.3%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  /* REAi Typography System */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold text-foreground;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      sans-serif;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight;
+    color: hsl(222.2 84% 4.9%); /* Deep dark blue matching REAi */
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight;
+    color: hsl(222.2 84% 4.9%); /* Deep dark blue matching REAi */
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl leading-snug tracking-tight;
+    color: hsl(222.2 84% 4.9%); /* Deep dark blue matching REAi */
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl leading-snug;
+    color: hsl(222.2 84% 4.9%); /* Deep dark blue matching REAi */
+  }
+
+  h5 {
+    @apply text-lg md:text-xl leading-normal;
+    color: hsl(222.2 84% 4.9%); /* Deep dark blue matching REAi */
+  }
+
+  h6 {
+    @apply text-base md:text-lg leading-normal;
+    color: hsl(222.2 84% 4.9%); /* Deep dark blue matching REAi */
+  }
+
+  /* Improve transition smoothness */
+  * {
+    transition-property: color, background-color, border-color,
+      text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  /* Custom scrollbar for better UX */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: hsl(var(--muted));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--primary) / 0.3);
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--primary) / 0.5);
+  }
+
+  /* REAi-specific gradient utilities */
+  .bg-gradient-primary {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--primary)) 0%,
+      hsl(212 95% 68%) 100%
+    );
+  }
+
+  .bg-gradient-secondary {
+    background: linear-gradient(
+      135deg,
+      hsl(210 98% 78%) 0%,
+      hsl(212 97% 87%) 100%
+    );
+  }
+
+  /* REAi button styles */
+  .btn-reai-primary {
+    @apply bg-primary hover:bg-primary/90 text-primary-foreground font-medium rounded-lg px-6 py-3 transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-reai-secondary {
+    @apply bg-transparent hover:bg-primary/10 text-primary border-2 border-primary font-medium rounded-lg px-6 py-3 transition-all duration-200;
+  }
+
+  /* REAi card styles */
+  .card-reai {
+    @apply bg-card border border-border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200;
+  }
+
+  /* REAi section spacing */
+  .section-reai {
+    @apply py-16 lg:py-24;
+  }
+
+  /* Animations */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.8s ease-out forwards;
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
+  /* REAi Header Styles */
+  .reai-header {
+    height: 72px; /* Consistent header height matching REAi */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  .reai-nav-item {
+    height: 40px; /* Consistent navigation item height */
+    display: flex;
+    align-items: center;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      sans-serif;
+  }
+
+  /* REAi Typography Utilities */
+  .text-reai-hero {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight;
+    color: hsl(222.2 84% 4.9%); /* Deep dark blue */
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      sans-serif;
+  }
+
+  .text-reai-heading {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight;
+    color: hsl(222.2 84% 4.9%); /* Deep dark blue */
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      sans-serif;
+  }
+
+  .text-reai-subheading {
+    @apply text-2xl md:text-3xl font-bold leading-snug tracking-tight;
+    color: hsl(222.2 84% 4.9%); /* Deep dark blue */
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      sans-serif;
+  }
+
+  .text-reai-body {
+    @apply text-base md:text-lg leading-relaxed;
+    color: hsl(215.4 16.3% 46.9%); /* Muted foreground */
+  }
+
+  .text-reai-caption {
+    @apply text-sm leading-normal;
+    color: hsl(215.4 16.3% 46.9%); /* Muted foreground */
+  }
+
+  @keyframes marching-ants {
+    from {
+      stroke-dashoffset: 0;
+    }
+    to {
+      stroke-dashoffset: 12;
+    }
+  }
+}
+
+/* Currency Animation */
+@keyframes currency-slide {
+  0%,
+  25% {
+    transform: translateY(0%);
+  }
+  25%,
+  33.33% {
+    transform: translateY(-25%);
+  }
+  33.33%,
+  58.33% {
+    transform: translateY(-25%);
+  }
+  58.33%,
+  66.66% {
+    transform: translateY(-50%);
+  }
+  66.66%,
+  91.66% {
+    transform: translateY(-50%);
+  }
+  91.66%,
+  100% {
+    transform: translateY(-75%);
+  }
+}
+
+.animate-currency-slide {
+  animation: currency-slide 6s cubic-bezier(1, 0, 0.6, 1.1) infinite;
+}
+
+/* Currency Animation */
+@keyframes currency-slide {
+  0%,
+  25% {
+    transform: translateY(0%);
+  }
+  25%,
+  33.33% {
+    transform: translateY(-25%);
+  }
+  33.33%,
+  58.33% {
+    transform: translateY(-25%);
+  }
+  58.33%,
+  66.66% {
+    transform: translateY(-50%);
+  }
+  66.66%,
+  91.66% {
+    transform: translateY(-50%);
+  }
+  91.66%,
+  100% {
+    transform: translateY(-75%);
+  }
+}
+
+.animate-currency-slide {
+  animation: currency-slide 6s cubic-bezier(1, 0, 0.6, 1.1) infinite;
+}

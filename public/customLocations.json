@@ -1,0 +1,112 @@
+{
+  "locations": [
+    {
+      "abbr": "CAS",
+      "name": "Casablanca",
+      "lat": 33.5731,
+      "lng": -7.5898
+    },
+    {
+      "abbr": "MEX",
+      "name": "Mexico City",
+      "lat": 19.4326,
+      "lng": -99.1332
+    },
+    {
+      "abbr": "LAX",
+      "name": "Los Angeles",
+      "lat": 34.0522,
+      "lng": -118.2437
+    },
+    {
+      "abbr": "LON",
+      "name": "London",
+      "lat": 51.5074,
+      "lng": -0.1278
+    },
+    {
+      "abbr": "TYO",
+      "name": "Tokyo",
+      "lat": 35.6895,
+      "lng": 139.6917
+    },
+    {
+      "abbr": "SYD",
+      "name": "Sydney",
+      "lat": -33.8688,
+      "lng": 151.2093
+    },
+    {
+      "abbr": "RAM",
+      "name": "Ramallah",
+      "lat": 31.9038,
+      "lng": 35.2034
+    },
+    {
+      "abbr": "DEL",
+      "name": "Delhi",
+      "lat": 28.6139,
+      "lng": 77.209
+    },
+    {
+      "abbr": "MOW",
+      "name": "Moscow",
+      "lat": 55.7558,
+      "lng": 37.6173
+    },
+    {
+      "abbr": "BJS",
+      "name": "Beijing",
+      "lat": 39.9042,
+      "lng": 116.4074
+    },
+    {
+      "abbr": "BRA",
+      "name": "Brazil",
+      "lat": -15.7939,
+      "lng": -47.8828
+    },
+    {
+      "abbr": "LBY",
+      "name": "Libya",
+      "lat": 32.8872,
+      "lng": 13.1913
+    },
+    {
+      "abbr": "DNK",
+      "name": "Denmark",
+      "lat": 55.6761,
+      "lng": 12.5683
+    },
+    {
+      "abbr": "KAZ",
+      "name": "Kazakhstan",
+      "lat": 51.1694,
+      "lng": 71.4491
+    },
+    {
+      "abbr": "ZAF",
+      "name": "South Africa",
+      "lat": -25.7461,
+      "lng": 28.1881
+    },
+    {
+      "abbr": "YEM",
+      "name": "Yemen",
+      "lat": 15.3694,
+      "lng": 44.191
+    },
+    {
+      "abbr": "NOR",
+      "name": "Norway",
+      "lat": 59.9139,
+      "lng": 10.7522
+    },
+    {
+      "abbr": "ALB",
+      "name": "Alberta",
+      "lat": 53.5461,
+      "lng": -113.4938
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "data": {
+    "municipalities": {
+      "items": [
+        {
+          "id": "201",
+          "name": "Montalcino Municipality",
+          "province": "Siena",
+          "population": 5123,
+          "latitude": 43.0598,
+          "longitude": 11.4886,
+          "description": "Historic wine region municipality in the heart of Tuscany, famous for Brunello wine production.",
+          "region": {
+            "id": "10",
+            "name": "Tuscany",
+            "country": {
+              "id": "1",
+              "name": "Italy",
+              "code": "IT",
+              "__typename": "Country"
+            },
+            "__typename": "Region"
+          },
+          "properties": [
+            {
+              "id": "1",
+              "__typename": "Property"
+            },
+            {
+              "id": "4",
+              "__typename": "Property"
+            },
+            {
+              "id": "7",
+              "__typename": "Property"
+            }
+          ],
+          "programs": [
+            {
+              "id": "301",
+              "program_status": "active",
+              "__typename": "Program"
+            }
+          ],
+          "__typename": "Municipality"
+        },
+        {
+          "id": "202",
+          "name": "Sambuca Municipality",
+          "province": "Agrigento",
+          "population": 6049,
+          "latitude": 37.6419,
+          "longitude": 13.1089,
+          "description": "Picturesque hilltop town in Sicily known for its one euro house program and wine production.",
+          "region": {
+            "id": "11",
+            "name": "Sicily",
+            "country": {
+              "id": "1",
+              "name": "Italy",
+              "code": "IT",
+              "__typename": "Country"
+            },
+            "__typename": "Region"
+          },
+          "properties": [
+            {
+              "id": "2",
+              "__typename": "Property"
+            },
+            {
+              "id": "5",
+              "__typename": "Property"
+            }
+          ],
+          "programs": [
+            {
+              "id": "302",
+              "program_status": "active",
+              "__typename": "Program"
+            }
+          ],
+          "__typename": "Municipality"
+        },
+        {
+          "id": "203",
+          "name": "Santo Stefano Municipality",
+          "province": "L'Aquila",
+          "population": 115,
+          "latitude": 42.3436,
+          "longitude": 13.6436,
+          "description": "Medieval mountain village in Abruzzo, one of Italy's most beautiful villages with stone architecture.",
+          "region": {
+            "id": "12",
+            "name": "Abruzzo",
+            "country": {
+              "id": "1",
+              "name": "Italy",
+              "code": "IT",
+              "__typename": "Country"
+            },
+            "__typename": "Region"
+          },
+          "properties": [
+            {
+              "id": "3",
+              "__typename": "Property"
+            },
+            {
+              "id": "6",
+              "__typename": "Property"
+            }
+          ],
+          "programs": [
+            {
+              "id": "303",
+              "program_status": "active",
+              "__typename": "Program"
+            }
+          ],
+          "__typename": "Municipality"
+        }
+      ],
+      "totalItems": 45,
+      "page": 1,
+      "pageSize": 3,
+      "totalPages": 15,
+      "__typename": "MunicipalityConnection"
+    }
+  }
+}

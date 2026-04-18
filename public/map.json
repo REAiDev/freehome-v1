@@ -1,0 +1,138 @@
+{
+  "type": "Map",
+  "coordinates": [
+    {
+      "text": "IND",
+      "size": 2.0,
+      "city": "New Delhi",
+      "lat": 13.0827,
+      "lng": 80.2707
+    },
+    {
+      "text": "UAE",
+      "size": 2.0,
+      "city": "Dubai",
+      "lat": 23.4241,
+      "lng": 53.8478
+    },
+    {
+      "text": "NYC",
+      "size": 2.5,
+      "city": "New York",
+      "lat": 40.7128,
+      "lng": -74.006
+    },
+    {
+      "text": "LON",
+      "size": 2.5,
+      "city": "London",
+      "lat": 51.5074,
+      "lng": -0.1278
+    },
+    {
+      "text": "BER",
+      "size": 2.0,
+      "city": "Berlin",
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    {
+      "text": "MOS",
+      "size": 2.0,
+      "city": "Moscow",
+      "lat": 55.7558,
+      "lng": 37.6173
+    },
+    {
+      "text": "TKY",
+      "size": 2.0,
+      "city": "Tokyo",
+      "lat": 35.6895,
+      "lng": 139.6917
+    },
+    {
+      "text": "RIO",
+      "size": 2.0,
+      "city": "Rio de Janeiro",
+      "lat": -22.9068,
+      "lng": -43.1729
+    },
+    {
+      "text": "MOR",
+      "size": 2.0,
+      "city": "Casablanca",
+      "lat": 33.5731,
+      "lng": -7.5898
+    },
+    {
+      "text": "BEI",
+      "size": 2.0,
+      "city": "Beijing",
+      "lat": 39.9042,
+      "lng": 116.4074
+    },
+    {
+      "text": "STO",
+      "size": 2.2,
+      "city": "Stockholm",
+      "lat": 59.3293,
+      "lng": 18.0686
+    },
+    {
+      "text": "DEL",
+      "size": 2.0,
+      "city": "Delhi",
+      "lat": 28.6139,
+      "lng": 77.209
+    },
+    {
+      "text": "SYD",
+      "size": 2.0,
+      "city": "Sydney",
+      "lat": -33.8688,
+      "lng": 151.2093
+    },
+    {
+      "text": "JNB",
+      "size": 2.0,
+      "city": "Johannesburg",
+      "lat": -26.2041,
+      "lng": 28.0473
+    },
+    {
+      "text": "LAX",
+      "size": 2.0,
+      "city": "Los Angeles",
+      "lat": 34.0522,
+      "lng": -118.2437
+    },
+    {
+      "text": "MEX",
+      "size": 2.0,
+      "city": "Mexico City",
+      "lat": 19.4326,
+      "lng": -99.1332
+    },
+    {
+      "text": "PLS",
+      "size": 1.8,
+      "city": "Ramallah",
+      "lat": 31.9038,
+      "lng": 35.1956
+    },
+    {
+      "text": "IST",
+      "size": 2.0,
+      "city": "Istanbul",
+      "lat": 41.0082,
+      "lng": 28.9784
+    },
+    {
+      "text": "ALB",
+      "size": 2.0,
+      "city": "Edmonton",
+      "lat": 53.5461,
+      "lng": -113.4938
+    }
+  ]
+}

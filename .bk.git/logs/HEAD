@@ -1,0 +1,15 @@
+0000000000000000000000000000000000000000 ca2a4bcad36b644c7bb967e5a119904db00d134c trucupei <191923529+trucupei@users.noreply.github.com> 1770412909 -0500	commit (initial): Current working state
+ca2a4bcad36b644c7bb967e5a119904db00d134c c7cae8ad802ea181c3c34b5ec47105c85b3da756 trucupei <191923529+trucupei@users.noreply.github.com> 1770412912 -0500	checkout: moving from main to development
+c7cae8ad802ea181c3c34b5ec47105c85b3da756 c7cae8ad802ea181c3c34b5ec47105c85b3da756 trucupei <191923529+trucupei@users.noreply.github.com> 1770412952 -0500	checkout: moving from development to bugfix/#152-fix-featured-insights-links
+c7cae8ad802ea181c3c34b5ec47105c85b3da756 c7cae8ad802ea181c3c34b5ec47105c85b3da756 trucupei <191923529+trucupei@users.noreply.github.com> 1770413308 -0500	reset: moving to origin/development
+c7cae8ad802ea181c3c34b5ec47105c85b3da756 c7cae8ad802ea181c3c34b5ec47105c85b3da756 trucupei <191923529+trucupei@users.noreply.github.com> 1770413322 -0500	reset: moving to origin/development
+c7cae8ad802ea181c3c34b5ec47105c85b3da756 c7cae8ad802ea181c3c34b5ec47105c85b3da756 trucupei <191923529+trucupei@users.noreply.github.com> 1770413816 -0500	checkout: moving from bugfix/#152-fix-featured-insights-links to development
+c7cae8ad802ea181c3c34b5ec47105c85b3da756 23aebd0df351943dcefe93f7002ef590d8d0345c trucupei <191923529+trucupei@users.noreply.github.com> 1770413822 -0500	reset: moving to origin/development
+23aebd0df351943dcefe93f7002ef590d8d0345c c7cae8ad802ea181c3c34b5ec47105c85b3da756 trucupei <191923529+trucupei@users.noreply.github.com> 1770414011 -0500	checkout: moving from development to bugfix/#152-fix-featured-insights-links
+c7cae8ad802ea181c3c34b5ec47105c85b3da756 23aebd0df351943dcefe93f7002ef590d8d0345c trucupei <191923529+trucupei@users.noreply.github.com> 1770414051 -0500	checkout: moving from bugfix/#152-fix-featured-insights-links to development
+23aebd0df351943dcefe93f7002ef590d8d0345c 23aebd0df351943dcefe93f7002ef590d8d0345c trucupei <191923529+trucupei@users.noreply.github.com> 1770414514 -0500	checkout: moving from development to bugfix/#152-fix-featured-insights-links
+23aebd0df351943dcefe93f7002ef590d8d0345c 6fc620093d3047de9a47bf8ba3fd46257448f3b1 trucupei <191923529+trucupei@users.noreply.github.com> 1770416050 -0500	commit: fix: update featured insights links to use /insights routes
+6fc620093d3047de9a47bf8ba3fd46257448f3b1 23aebd0df351943dcefe93f7002ef590d8d0345c trucupei <191923529+trucupei@users.noreply.github.com> 1770416199 -0500	checkout: moving from bugfix/#152-fix-featured-insights-links to development
+23aebd0df351943dcefe93f7002ef590d8d0345c 23aebd0df351943dcefe93f7002ef590d8d0345c trucupei <191923529+trucupei@users.noreply.github.com> 1770416243 -0500	checkout: moving from development to development
+23aebd0df351943dcefe93f7002ef590d8d0345c 23aebd0df351943dcefe93f7002ef590d8d0345c trucupei <191923529+trucupei@users.noreply.github.com> 1770416607 -0500	checkout: moving from development to development
+23aebd0df351943dcefe93f7002ef590d8d0345c 20274c5b621801f6f979cb717f94f1a8395cc62e trucupei <191923529+trucupei@users.noreply.github.com> 1770416608 -0500	pull origin development: Fast-forward

@@ -1,0 +1,181 @@
+{
+  "data": {
+    "properties": {
+      "items": [
+        {
+          "id": "1",
+          "title": "Charming Stone House in Tuscany",
+          "description": "Beautiful traditional stone house with panoramic views over the countryside. Needs restoration but has incredible potential.",
+          "priceAmount": 8500.00,
+          "currency": "EUR",
+          "address": "Via del Campo 23, Montalcino",
+          "cityName": "Montalcino",
+          "latitude": 43.0598,
+          "longitude": 11.4886,
+          "propertyType": "house",
+          "size": 120.0,
+          "unitSize": "sqm",
+          "bedrooms": 3,
+          "bathrooms": 1,
+          "features": ["stone walls", "fireplace", "garden", "rural location"],
+          "images": [
+            "https://example.com/property1/image1.jpg",
+            "https://example.com/property1/image2.jpg"
+          ],
+          "listingUrl": "https://example.com/properties/1",
+          "status": "available",
+          "renovationEstimate": 45000.00,
+          "city": {
+            "id": "101",
+            "name": "Montalcino",
+            "region": {
+              "id": "10",
+              "name": "Tuscany",
+              "country": {
+                "id": "1",
+                "name": "Italy",
+                "code": "IT",
+                "__typename": "Country"
+              },
+              "__typename": "Region"
+            },
+            "__typename": "City"
+          },
+          "municipality": {
+            "id": "201",
+            "name": "Montalcino Municipality",
+            "__typename": "Municipality"
+          },
+          "program": {
+            "id": "301",
+            "program_status": "active",
+            "category": {
+              "id": "401",
+              "name": "Rural Regeneration",
+              "__typename": "Category"
+            },
+            "__typename": "Program"
+          },
+          "__typename": "Property"
+        },
+        {
+          "id": "2",
+          "title": "Village House in Sicily",
+          "description": "Traditional village house in the heart of Sicily. Great bones, needs love and attention.",
+          "priceAmount": 5000.00,
+          "currency": "EUR",
+          "address": "Via Roma 15, Sambuca di Sicilia",
+          "cityName": "Sambuca di Sicilia",
+          "latitude": 37.6419,
+          "longitude": 13.1089,
+          "propertyType": "house",
+          "size": 80.0,
+          "unitSize": "sqm",
+          "bedrooms": 2,
+          "bathrooms": 1,
+          "features": ["traditional architecture", "village center", "terrace"],
+          "images": [
+            "https://example.com/property2/image1.jpg"
+          ],
+          "listingUrl": "https://example.com/properties/2",
+          "status": "available",
+          "renovationEstimate": 35000.00,
+          "city": {
+            "id": "102",
+            "name": "Sambuca di Sicilia",
+            "region": {
+              "id": "11",
+              "name": "Sicily",
+              "country": {
+                "id": "1",
+                "name": "Italy",
+                "code": "IT",
+                "__typename": "Country"
+              },
+              "__typename": "Region"
+            },
+            "__typename": "City"
+          },
+          "municipality": {
+            "id": "202",
+            "name": "Sambuca Municipality",
+            "__typename": "Municipality"
+          },
+          "program": {
+            "id": "302",
+            "program_status": "active",
+            "category": {
+              "id": "402",
+              "name": "One Euro Homes",
+              "__typename": "Category"
+            },
+            "__typename": "Program"
+          },
+          "__typename": "Property"
+        },
+        {
+          "id": "3",
+          "title": "Mountain Cottage in Abruzzo",
+          "description": "Cozy mountain cottage with stunning views. Perfect for those seeking tranquility.",
+          "priceAmount": 9800.00,
+          "currency": "EUR",
+          "address": "Strada Montana 8, Santo Stefano di Sessanio",
+          "cityName": "Santo Stefano di Sessanio",
+          "latitude": 42.3436,
+          "longitude": 13.6436,
+          "propertyType": "cottage",
+          "size": 95.0,
+          "unitSize": "sqm",
+          "bedrooms": 2,
+          "bathrooms": 1,
+          "features": ["mountain views", "hiking trails", "traditional stone"],
+          "images": [
+            "https://example.com/property3/image1.jpg",
+            "https://example.com/property3/image2.jpg",
+            "https://example.com/property3/image3.jpg"
+          ],
+          "listingUrl": "https://example.com/properties/3",
+          "status": "available",
+          "renovationEstimate": 25000.00,
+          "city": {
+            "id": "103",
+            "name": "Santo Stefano di Sessanio",
+            "region": {
+              "id": "12",
+              "name": "Abruzzo",
+              "country": {
+                "id": "1",
+                "name": "Italy",
+                "code": "IT",
+                "__typename": "Country"
+              },
+              "__typename": "Region"
+            },
+            "__typename": "City"
+          },
+          "municipality": {
+            "id": "203",
+            "name": "Santo Stefano Municipality",
+            "__typename": "Municipality"
+          },
+          "program": {
+            "id": "303",
+            "program_status": "active",
+            "category": {
+              "id": "403",
+              "name": "Mountain Recovery",
+              "__typename": "Category"
+            },
+            "__typename": "Program"
+          },
+          "__typename": "Property"
+        }
+      ],
+      "totalItems": 15,
+      "page": 1,
+      "pageSize": 3,
+      "totalPages": 5,
+      "__typename": "PropertyConnection"
+    }
+  }
+}

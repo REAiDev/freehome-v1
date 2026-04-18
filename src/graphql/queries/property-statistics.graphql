@@ -1,0 +1,32 @@
+query GetPropertyStatistics {
+  propertyStatistics {
+    byStatus {
+      statusCounts {
+        status
+        count
+      }
+      total
+    }
+    byPrice {
+      priceRanges {
+        range
+        count
+      }
+      total
+      averagePrice
+      minPrice
+      maxPrice
+    }
+    byLocation {
+      byCountry {
+        country
+        count
+      }
+      byRegion {
+        region
+        count
+      }
+      total
+    }
+  }
+}

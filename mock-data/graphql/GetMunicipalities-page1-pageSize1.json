@@ -1,0 +1,55 @@
+{
+  "data": {
+    "municipalities": {
+      "items": [
+        {
+          "id": "201",
+          "name": "Montalcino Municipality",
+          "province": "Siena",
+          "population": 5123,
+          "latitude": 43.0598,
+          "longitude": 11.4886,
+          "description": "Historic wine region municipality in the heart of Tuscany, famous for Brunello wine production.",
+          "region": {
+            "id": "10",
+            "name": "Tuscany",
+            "country": {
+              "id": "1",
+              "name": "Italy",
+              "code": "IT",
+              "__typename": "Country"
+            },
+            "__typename": "Region"
+          },
+          "properties": [
+            {
+              "id": "1",
+              "__typename": "Property"
+            },
+            {
+              "id": "4",
+              "__typename": "Property"
+            },
+            {
+              "id": "7",
+              "__typename": "Property"
+            }
+          ],
+          "programs": [
+            {
+              "id": "301",
+              "program_status": "active",
+              "__typename": "Program"
+            }
+          ],
+          "__typename": "Municipality"
+        }
+      ],
+      "totalItems": 45,
+      "page": 1,
+      "pageSize": 1,
+      "totalPages": 45,
+      "__typename": "MunicipalityConnection"
+    }
+  }
+}

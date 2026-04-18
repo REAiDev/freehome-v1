@@ -1,0 +1,133 @@
+query GetMunicipalities(
+  $page: Int
+  $pageSize: Int
+  $regionId: ID
+  $search: String
+) {
+  municipalities(
+    page: $page
+    pageSize: $pageSize
+    regionId: $regionId
+    search: $search
+  ) {
+    items {
+      id
+      name
+      province
+      population
+      latitude
+      longitude
+      description
+      region {
+        id
+        name
+        country {
+          id
+          name
+          code
+        }
+      }
+      properties {
+        id
+      }
+      programs {
+        id
+        program_status
+      }
+    }
+    totalItems
+    page
+    pageSize
+    totalPages
+  }
+}
+
+query GetMunicipality($id: ID!) {
+  municipality(id: $id) {
+    id
+    name
+    province
+    population
+    altitude
+    latitude
+    longitude
+    description
+    history
+    addressFull
+    street
+    postalCode
+    phone
+    email
+    website
+    visitWebsite
+    region {
+      id
+      name
+      country {
+        id
+        name
+        code
+      }
+    }
+    programs {
+      id
+      program_status
+      category {
+        id
+        name
+      }
+      projectSummary
+    }
+    properties {
+      id
+      title
+      priceAmount
+      currency
+      images
+      propertyType
+      bedrooms
+      bathrooms
+      size
+      unitSize
+      cityName
+      city {
+        id
+        name
+        region {
+          id
+          name
+          country {
+            id
+            name
+            code
+          }
+        }
+      }
+    }
+    attractions {
+      id
+      name
+      description
+      type
+    }
+    naturalFeatures {
+      id
+      name
+      description
+      type
+    }
+    events {
+      id
+      name
+      description
+      date
+      frequency
+    }
+    activities {
+      id
+      name
+      description
+      type
+    }
+  }
+}

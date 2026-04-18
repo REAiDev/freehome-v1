@@ -1,0 +1,34 @@
+{
+  "data": {
+    "countries": [
+      {
+        "id": "1",
+        "name": "Italy",
+        "code": "IT",
+        "currency": "EUR",
+        "__typename": "Country"
+      },
+      {
+        "id": "2",
+        "name": "France",
+        "code": "FR",
+        "currency": "EUR",
+        "__typename": "Country"
+      },
+      {
+        "id": "3",
+        "name": "Spain",
+        "code": "ES",
+        "currency": "EUR",
+        "__typename": "Country"
+      },
+      {
+        "id": "4",
+        "name": "Portugal",
+        "code": "PT",
+        "currency": "EUR",
+        "__typename": "Country"
+      }
+    ]
+  }
+}

@@ -1,0 +1,238 @@
+query GetProperties(
+  $page: Int
+  $pageSize: Int
+  $programId: ID
+  $municipalityId: ID
+  $cityId: ID
+  $priceMin: Float
+  $priceMax: Float
+  $bedroomsMin: Int
+  $bedroomsMax: Int
+  $search: String
+) {
+  properties(
+    page: $page
+    pageSize: $pageSize
+    programId: $programId
+    municipalityId: $municipalityId
+    cityId: $cityId
+    priceMin: $priceMin
+    priceMax: $priceMax
+    bedroomsMin: $bedroomsMin
+    bedroomsMax: $bedroomsMax
+    search: $search
+  ) {
+    items {
+      id
+      title
+      description
+      priceAmount
+      currency
+      address
+      cityName
+      latitude
+      longitude
+      propertyType
+      size
+      unitSize
+      bedrooms
+      bathrooms
+      features
+      images
+      listingUrl
+      status
+      renovationEstimate
+      city {
+        id
+        name
+        region {
+          id
+          name
+          country {
+            id
+            name
+            code
+          }
+        }
+      }
+      municipality {
+        id
+        name
+      }
+      program {
+        id
+        program_status
+        category {
+          id
+          name
+        }
+      }
+    }
+    totalItems
+    page
+    pageSize
+    totalPages
+  }
+}
+
+query GetProperty($id: ID!) {
+  property(id: $id) {
+    id
+    title
+    description
+    priceAmount
+    currency
+    address
+    cityName
+    latitude
+    longitude
+    propertyType
+    size
+    unitSize
+    bedrooms
+    bathrooms
+    features
+    images
+    listingUrl
+    status
+    conditionDescription
+    propertyHistory
+    originalPrice
+    marketValue
+    renovationEstimate
+    # Timeline Information
+    availableFrom
+    availableUntil
+    applicationDeadline
+    scrapedAt
+    sourceCreatedAt
+    sourceModifiedAt
+    updatedAt
+    # Additional Financial Info
+    deposit
+    listingType
+    # Source Information
+    externalId
+    property_details
+    parsedLocationData
+    source {
+      id
+    }
+    # Postal Code Information
+    postalCode {
+      id
+      code
+      city {
+        id
+        name
+      }
+    }
+    city {
+      id
+      name
+      region {
+        id
+        name
+        country {
+          id
+          name
+          code
+        }
+      }
+    }
+    municipality {
+      id
+      name
+      description
+      website
+      visitWebsite
+      latitude
+      longitude
+      # Extended Municipality Info
+      province
+      population
+      altitude
+      history
+      addressFull
+      street
+      postalCode
+      phone
+      email
+      region {
+        id
+        name
+        country {
+          id
+          name
+          code
+        }
+      }
+      # Related entities
+      attractions {
+        id
+        name
+        description
+        type
+      }
+      naturalFeatures {
+        id
+        name
+        description
+        type
+      }
+      events {
+        id
+        name
+        description
+        date
+        frequency
+      }
+      activities {
+        id
+        name
+        description
+        type
+      }
+    }
+    program {
+      id
+      program_status
+      renovation_required
+      renovation_timeline
+      renovation_plan_deadline
+      renovation_min_invest
+      deposit_required
+      deposit_currency
+      living_requirement
+      rental_allowed
+      eligibility_age
+      eligibility_profile
+      visa_requirements
+      incentive_renovation
+      incentive_relocation
+      incentive_energy
+      other_incentives
+      program_terms
+      application_deadline
+      official_website
+      contact_email
+      contact_phone
+      contact_name
+      # Extended Program Info
+      startYear
+      approvalDetails
+      applicationLinks
+      projectSummary
+      renovationRequirements
+      financialGuaranteeAmount
+      financialGuaranteeCurrency
+      renovationTimelineMonths
+      propertyDestinations
+      availablePropertyCount
+      category {
+        id
+        name
+      }
+    }
+  }
+}

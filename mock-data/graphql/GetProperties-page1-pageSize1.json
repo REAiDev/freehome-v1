@@ -1,0 +1,69 @@
+{
+  "data": {
+    "properties": {
+      "items": [
+        {
+          "id": "1",
+          "title": "Charming Stone House in Tuscany",
+          "description": "Beautiful traditional stone house with panoramic views over the countryside. Needs restoration but has incredible potential.",
+          "priceAmount": 8500.00,
+          "currency": "EUR",
+          "address": "Via del Campo 23, Montalcino",
+          "cityName": "Montalcino",
+          "latitude": 43.0598,
+          "longitude": 11.4886,
+          "propertyType": "house",
+          "size": 120.0,
+          "unitSize": "sqm",
+          "bedrooms": 3,
+          "bathrooms": 1,
+          "features": ["stone walls", "fireplace", "garden", "rural location"],
+          "images": [
+            "https://example.com/property1/image1.jpg",
+            "https://example.com/property1/image2.jpg"
+          ],
+          "listingUrl": "https://example.com/properties/1",
+          "status": "available",
+          "renovationEstimate": 45000.00,
+          "city": {
+            "id": "101",
+            "name": "Montalcino",
+            "region": {
+              "id": "10",
+              "name": "Tuscany",
+              "country": {
+                "id": "1",
+                "name": "Italy",
+                "code": "IT",
+                "__typename": "Country"
+              },
+              "__typename": "Region"
+            },
+            "__typename": "City"
+          },
+          "municipality": {
+            "id": "201",
+            "name": "Montalcino Municipality",
+            "__typename": "Municipality"
+          },
+          "program": {
+            "id": "301",
+            "program_status": "active",
+            "category": {
+              "id": "401",
+              "name": "Rural Regeneration",
+              "__typename": "Category"
+            },
+            "__typename": "Program"
+          },
+          "__typename": "Property"
+        }
+      ],
+      "totalItems": 235,
+      "page": 1,
+      "pageSize": 1,
+      "totalPages": 235,
+      "__typename": "PropertyConnection"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+fix: update featured insights links to use /insights routes
+
+Updated FeaturedInsightsSection component to use correct routing:
+- Changed individual post links from /posts/{slug} to /insights/{slug}
+- Changed "View all insights" link from /posts to /insights
+
+This aligns with the current routing structure where insights are
+served under /insights rather than /posts.
+
+Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
